@@ -4,7 +4,7 @@ const getRegistrationDetail = () => {
   const email = document.getElementById("email").value;
   const phoneNumber = document.getElementById("phone_number").value;
   const practiceName = document.getElementById("practice_name").value;
-  const eventId = "SM8716";
+  const eventId = "SM1345";
 
   const registrationDetail = {
     event: eventId,
@@ -29,7 +29,7 @@ function handleSubmit(event) {
   event.preventDefault();
   const regDetail = getRegistrationDetail();
   console.log(regDetail);
-  const baseUrl = "https://testbck.smartdvm.com";
+  const baseUrl = "https://bck.uat.smartdvm.com";
   const apiUrl = `/api/event/smartdvm_events_register/list/${regDetail.event}/`;
   $.ajax({
     contentType: "application/json",
