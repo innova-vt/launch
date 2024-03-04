@@ -12017,7 +12017,7 @@ textarea {
   content: "";
   right: -200px;
   top: -200px;
-  background: url("../images/hero-cloud.png") no-repeat;
+  /* background: url("../images/hero-cloud.png") no-repeat; */
   background-size: cover;
   width: 1113.97px;
   height: 850.62px;
