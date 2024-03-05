@@ -1465,6 +1465,7 @@ progress {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: 50%;
+    margin-top: -2rem;
   }
   .col-lg-7 {
     -webkit-box-flex: 0;
@@ -7530,6 +7531,7 @@ fieldset:disabled .btn {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   justify-content: space-between !important;
+  margin-top: -1rem !important;
 }
 
 .justify-content-around {
@@ -7685,7 +7687,7 @@ fieldset:disabled .btn {
 }
 
 .m-0 {
-  margin: 0 !important;
+  margin-top: -2rem !important;
 }
 
 .m-1 {
@@ -7791,7 +7793,8 @@ fieldset:disabled .btn {
 }
 
 .mt-2 {
-  margin-top: 0.5rem !important;
+  margin-top: -2rem !important;
+  /* changed from 0.5 to -2*/
 }
 
 .mt-3 {
