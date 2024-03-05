@@ -1465,7 +1465,7 @@ progress {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: 50%;
-    margin-top: -2rem;
+    margin-top: -4rem;
   }
   .col-lg-7 {
     -webkit-box-flex: 0;
@@ -12015,17 +12015,17 @@ textarea {
   min-height: 600px;
   position: relative;
 }
-.hero-section:after {
+/* .hero-section:after {
   position: absolute;
   content: "";
   right: -200px;
   top: -200px;
-  /* background: url("../images/hero-cloud.png") no-repeat; */
+  background: url("../images/hero-cloud.png") no-repeat;
   background-size: cover;
   width: 1113.97px;
   height: 850.62px;
   z-index: -1;
-}
+} */
 .hero-section .img-wrap {
   position: relative;
 }
