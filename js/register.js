@@ -1,3 +1,16 @@
+const getCurrentHost=()=>{
+  if (window.location.host.includes("smartdvm.com")){
+    return "https://bck.uat.smartdvm.com"
+  }
+  return  "http://localhost:8000"
+}
+const getEventId=()=>{
+  if (window.location.host.includes("smartdvm.com")){
+    return "SM1345"
+  }
+  return  "SM4539"
+}
+
 const getRegistrationDetail = () => {
   const firstName = document.getElementById("fname").value;
   const lastName = document.getElementById("lname").value;
@@ -5,7 +18,7 @@ const getRegistrationDetail = () => {
   const phoneNumber = document.getElementById("phone_number").value;
   const practiceName = document.getElementById("practice_name").value;
   const raffleSwitch= document.getElementById("raffleSwitch").checked;
-  const eventId = "SM1345";
+  const eventId = getEventId();
   console.log(raffleSwitch)
 
   const registrationDetail = {
@@ -33,7 +46,7 @@ function handleSubmit(event) {
   event.preventDefault();
   const regDetail = getRegistrationDetail();
   console.log(regDetail);
-  const baseUrl = "https://bck.uat.smartdvm.com";
+  const baseUrl = getCurrentHost()
   const apiUrl = `/api/event/smartdvm_events_register/list/${regDetail.event}/`;
   $.ajax({
     contentType: "application/json",
