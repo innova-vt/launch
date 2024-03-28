@@ -1,0 +1,17 @@
+.reg-success{
+padding: 20px ;
+background-color: #CEEEDB;
+color: #09AA49;
+font-weight: 700;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+.reg-error{
+    padding: 20px ;
+    background-color: #FACCCC;
+    color: #E50000;
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 5px;
+    }
