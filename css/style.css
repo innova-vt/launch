@@ -12084,14 +12084,54 @@ textarea {
   box-shadow: none;
 }
 
-.feature {
+.attendance {
   padding-left: 50px;
   padding-right: 50px;
 }
 @media (max-width: 767.98px) {
-  .feature {
+  .attendance {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+.attendance .icon {
+  font-size: 50px;
+  position: relative;
+}
+.attendance .icon:before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: -0px;
+  left: -0px;
+  /* background-color: rgba(251, 178, 68, 0.5);
+  border-radius: 50%;
+  z-index: -1; */
+}
+.attendance h3,
+.attendance .h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.attendance.text-center .icon:before {
+  left: 50%;
+}
+
+/* break here */
+
+.feature {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(171, 171, 171, 0.16);
+}
+
+@media (max-width: 767.98px) {
+  .feature {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .feature .icon {
@@ -12105,9 +12145,6 @@ textarea {
   height: 40px;
   top: -0px;
   left: -0px;
-  /* background-color: rgba(251, 178, 68, 0.5);
-  border-radius: 50%;
-  z-index: -1; */
 }
 .feature h3,
 .feature .h3 {
@@ -12116,6 +12153,23 @@ textarea {
 }
 .feature.text-center .icon:before {
   left: 50%;
+}
+.feature-border {
+  border: 1px solid #d9d9d9;
+  background-color: #fdfdfd;
+}
+
+.feature-border ul {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  list-style-type: none;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.feature-border ul li {
+  padding-left: 0px !important;
 }
 
 .service {
@@ -12447,6 +12501,8 @@ textarea {
 .img_icon {
   height: 3rem;
   width: 3rem;
+  color: #009eed;
+
 }
 
 .launch {
