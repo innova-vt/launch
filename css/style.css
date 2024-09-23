@@ -12510,3 +12510,51 @@ textarea {
 .agenda {
   font-weight: bold;
 }
+
+/* whatsapp */
+
+/* .icon-whatsapp{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px;
+  display: inline-block;
+  z-index: 1000;
+  font-weight: 900;
+  font-size: 70px;
+  color: #25D366;
+} */
+
+.whatsapp-section {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.icon-whatsapp {
+  font-weight: 900;
+  font-size: 70px; 
+  color: #25D366; 
+  margin-right: 20px;
+}
+
+.whatsapp-link {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 20px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  text-decoration: none;
+  color: #000;
+  font-weight: 500; 
+  font-size: 11px; 
+}
+
+.icon-whatsapp:hover{
+  color: #009eed;
+}
+  
+  
+ 
